@@ -9,8 +9,7 @@ module.exports = {
     './app/app.jsx'
   ],
   externals: {
-    jquery: 'jQuery',
-    foundation: 'Foundation'
+    jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -54,7 +53,7 @@ module.exports = {
   },
   sassLoader: {
     includePaths: [
-      path.resolve(__dirname, './node_modules/foundation-sites/scss')
+      path.resolve(__dirname, '/node_modules/foundation-sites/scss')
     ]
   },
   devtool: 'cheap-module-eval-source-map'

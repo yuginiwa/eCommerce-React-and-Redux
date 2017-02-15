@@ -16,48 +16,48 @@ class Categories extends Component {
               </div>
 
               <div className="column small-6 medium-2">
-                 <a href="#">
+                 <Link to="/category/Mobile-Phones">
                   <div className="categories-section">
                       <i className="fa fa-mobile"></i>
                       <p>Mobile Phones &#38; Tablets</p>
                   </div>
-                 </a>
+                 </Link>
               </div>
 
               <div className="column small-6 medium-2">
-                 <a href="#">
+                 <Link to="/category/Home-Appliances">
                   <div className="categories-section">
                       <i className="fa fa-tv"></i>
                       <p>Home Appliances</p>
                   </div>
-                 </a>
+                 </Link>
               </div>
 
               <div className="column small-6 medium-2">
-                 <a href="#">
+                 <Link to="/category/Mens-Accessories">
                   <div className="categories-section">
                       <i className="fa fa-male"></i>
                       <p>Men&#39;s Fashion &#38; Accessories</p>
                   </div>
-                 </a>
+                 </Link>
               </div>
 
               <div className="column small-6 medium-2">
-                 <a href="#">
+                 <Link to="/category/Womens-Accessories">
                   <div className="categories-section">
                       <i className="fa fa-female"></i>
                       <p>Women&#39;s Fashion &#38; Accessories</p>
                   </div>
-                 </a>
+                 </Link>
               </div>
 
               <div className="column small-6 medium-2">
-                 <a href="#">
+                 <Link to="/category/Services">
                   <div className="categories-section">
                       <i className="fa fa-wrench"></i>
                       <p>Services</p>
                   </div>
-                 </a>
+                 </Link>
               </div>
           </div>
       </div>

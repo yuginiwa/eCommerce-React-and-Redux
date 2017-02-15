@@ -1,4 +1,7 @@
 @import 'base/variables';
+@import "~foundation-sites/scss/foundation";
+@include foundation-everything;
+
 
 // Components
 @import 'components/home';
