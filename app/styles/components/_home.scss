@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+/*
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(./../img/mayon.jpg);
+    background-size: cover;
+    background-position: center;
+*/
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+
+/* NAVIGATION */
+.mini-nav {
+    font-size: 110%;
+}
+.mini-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 0 4px 0;
+    padding: 10px 0 10px 0;
+    letter-spacing: 2px;
+}
+
+.mini-nav li:first-child::after {
+    content: '|';
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 120%
+}
+
+.mini-nav li:last-child {
+    margin-right: 10px;
+}
+
+/* LOGO */
+
+.logo i {
+    font-size: 9REM;
+    color: #394790;
+/*    color: #ffffff;*/
+}
+
+/* SEARCH */
+
+.search-box {
+    margin-top: 2%;
+}
+
+.search-bar {
+    border: 1px solid #d8d3d3;
+    display: flex;
+    align-items: center; /* align vertical */
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+input[type=search] {
+    width: 80%;
+    border: none;
+    margin: 10px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.search-button {
+    padding: 10px;
+    margin-right: 15px;
+    border: 1px solid #d8d3d3;
+    border-radius: 15px;
+/*    color: #b9b9b9;*/
+    color: #000000;
+    letter-spacing: 1px;
+/*    box-shadow: 3px 3px 15px #d8d8d8;*/
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+.fa-search {
+    color: #d8d3d3;
+    font-size: 130%;
+    padding-left: 15px;
+}
+
+
+/* CATEGORIES */
+
+.categories {
+    margin-top: 1.5%
+}
+
+.categories .row{
+    width: 95%;
+}
+
+.categories .column div {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #d8d3d3;
+    height: 160px;
+    border-radius: 20px;
+/*    box-shadow: 3px 3px 15px #d8d8d8;*/
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+/*    color: #d6d6d6;*/
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.categories .column div p {
+    font-size: 80%;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.categories .column div i {
+    font-size: 3rem;
+    padding-top: 5px;
+}
+
+/*.fa-laptop {color: #c6c6c6; }*/
+.fa-mobile { color: #c6ac57; }
+.fa-tv { color: #ed3737; }
+.fa-male { color: #3636de; }
+.fa-female { color: #fc7990; }
+.fa-wrench { color: #953b3b; }
+
+/*para mabago hindi magbago ang kulay ng a tag.*/
+.categories a { color: inherit; }
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+
+}
+
+.footer li {
+    list-style: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 80%;
+}
+
+.footer li:first-child::after,
+.footer li:nth-child(2)::after{
+    content: '|';
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 120%
+}
+
+.footer a:link,
+.footer a:visited {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+/*    color: #ffffff;*/
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.footer a:hover{
+/*    color: #ffffff;*/
+    border-bottom: 2px solid black;
+}

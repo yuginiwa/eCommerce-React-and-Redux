@@ -4,11 +4,19 @@ var path = require('path');
 
 module.exports = {
   entry: [
+    'script!jquery/dist/jquery.min.js',
+    'script!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
+    jquery: 'jQuery',
+    foundation: 'Foundation'
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false
@@ -17,15 +25,18 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
+    publicPath: '/'
   },
   resolve: {
     root: __dirname,
     modulesDirectories: [
       "node_modules",
+      "./app/components"
     ],
     alias: {
       app: 'app',
+      applicationStyles: 'app/styles/app.scss',
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -39,6 +50,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
       }
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
   devtool: 'cheap-module-eval-source-map'
